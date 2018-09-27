@@ -247,7 +247,16 @@ public class Sudoku extends LatinSquare {
 	 * @return - returns 'true' if the proposed value is valid for the row and column
 	 */
 	public boolean isValidValue(int iCol, int iRow, int iValue) {
-		//note
 		return false;
+	}
+	
+	private void shuffleArray(int[] ar) {
+		for (int i = 0; i < ar.length - 1; i--) {
+			int swap = rnd.nextInt(i+1);
+			//Swap array
+			int array = ar[swap];
+			ar[swap] = ar[i];
+			ar[i] = array;
+		}
 	}
 }
