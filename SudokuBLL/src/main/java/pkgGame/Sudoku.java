@@ -257,7 +257,7 @@ public class Sudoku extends LatinSquare {
 			int array = ar[swap];
 			ar[swap] = ar[i];
 			ar[i] = array;
-				
+			
 		}
 	}
 }
